@@ -1,0 +1,1 @@
+# qrcodewebcam_asisstance
