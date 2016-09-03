@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date admisision:</strong>
+  <%= @asistancee.date_admisision %>
+</p>
+
+<p>
+  <strong>Student:</strong>
+  <%= @asistancee.student %>
+</p>
+
+<%= link_to 'Edit', edit_asistancee_path(@asistancee) %> |
+<%= link_to 'Back', asistancees_path %>

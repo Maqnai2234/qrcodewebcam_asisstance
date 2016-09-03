@@ -1,0 +1,1 @@
+json.array! @asistancees, partial: 'asistancees/asistancee', as: :asistancee

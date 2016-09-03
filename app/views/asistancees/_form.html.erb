@@ -1,0 +1,27 @@
+<%= form_for(asistancee) do |f| %>
+  <% if asistancee.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(asistancee.errors.count, "error") %> prohibited this asistancee from being saved:</h2>
+
+      <ul>
+      <% asistancee.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :date_admisision %>
+    <%= f.datetime_select :date_admisision %>
+  </div>
+
+  <div class="field">
+    <%= f.label :student_id %>
+    <%= f.text_field :student_id %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
